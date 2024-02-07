@@ -1,0 +1,6 @@
+pages\AkunPage.class
+pages\LoginPage.class
+runners\testRunner.class
+steps\loginLogoutStep.class
+pages\HomePage.class
+steps\commonStep.class
