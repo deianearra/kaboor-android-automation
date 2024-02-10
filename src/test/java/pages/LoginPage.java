@@ -34,6 +34,10 @@ public class LoginPage {
     @FindBy(xpath = "/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.appcompat.widget.LinearLayoutCompat/android.widget.FrameLayout[3]/androidx.appcompat.widget.LinearLayoutCompat/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.EditText")
     private WebElement txtPassword;
 
+    public void tapBuatAkunYuk() {
+        keyword.tapElement(linkTxtBuatAkunYuk);
+        keyword.waitFor(2);
+    }
 
     public void verifyComponentOnLoginPage1() {
         keyword.verifyElementExist(txtEmail);

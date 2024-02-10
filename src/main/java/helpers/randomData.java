@@ -18,6 +18,8 @@ public class randomData {
         return faker.address().zipCode();
     }
 
+    public static String getEmail() {return faker.internet().emailAddress();}
+
     public static boolean isPriceSorted(List<WebElement> itemPrices) {
         for (int i = 0; i < itemPrices.size() - 1; i++) {
             double value1 = extractNumericValue(itemPrices.get(i));
